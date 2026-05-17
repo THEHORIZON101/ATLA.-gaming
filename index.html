@@ -1,309 +1,182 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orbit — Turn homework chaos into tonight’s study plan</title>
-  <meta
-    name="description"
-    content="Orbit helps students brain dump homework, notes, and tasks, then turns them into a clear study plan for the night."
-  />
+  <title>Game Hub</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <a class="skip-link" href="#planner">Skip to planner</a>
+  <main class="page">
+    <aside class="floating-sidebar">
+      <button class="side-btn active">⌂</button>
+      <button class="side-btn">♡</button>
+      <button class="side-btn">⇩</button>
+      <button class="side-btn">☻</button>
+      <button class="side-btn">⚙</button>
+    </aside>
 
-  <div class="page-glow page-glow-one" aria-hidden="true"></div>
-  <div class="page-glow page-glow-two" aria-hidden="true"></div>
-
-  <header class="site-header" data-header>
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="Orbit home">
-        <span class="brand-mark" aria-hidden="true">
-          <span class="brand-core"></span>
-        </span>
-        <span>Orbit</span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
-        <span></span>
-        <span></span>
-      </button>
-
-      <div class="nav-links" data-nav-links>
-        <a href="#planner">Planner</a>
-        <a href="#how">How it works</a>
-        <a href="#features">Features</a>
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
-          <span data-theme-icon>☾</span>
-          <span data-theme-label>Dark</span>
-        </button>
-      </div>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero section">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">
-          <span class="pulse-dot" aria-hidden="true"></span>
-          After-school planning for tired brains
-        </p>
-
-        <h1>Come home. Dump the chaos. Know what to do tonight.</h1>
-
-        <p class="hero-text">
-          Orbit turns homework, notes, readings, and loose reminders into a calm study path with time blocks,
-          breaks, and a realistic finish line.
-        </p>
-
-        <div class="hero-actions" aria-label="Primary actions">
-          <a class="button button-primary" href="#planner">Build my plan</a>
-          <a class="button button-secondary" href="#how">See how it works</a>
+    <section class="glass-app">
+      <header class="topbar">
+        <div class="search-box">
+          <span>⌕</span>
+          <input type="text" placeholder="Search games" />
         </div>
 
-        <div class="hero-proof" aria-label="Orbit benefits">
+        <nav class="nav-tabs">
+          <button class="tab active">Home</button>
+          <button class="tab">Games</button>
+          <button class="tab">Two-Player</button>
+          <button class="tab">Action</button>
+          <button class="tab">More</button>
+        </nav>
+
+        <div class="profile">
+          <div class="bell">●</div>
+          <div class="avatar"></div>
           <div>
-            <strong>3-step</strong>
-            <span>night reset</span>
-          </div>
-          <div>
-            <strong>Local</strong>
-            <span>browser save</span>
-          </div>
-          <div>
-            <strong>Mobile</strong>
-            <span>ready</span>
+            <strong>Player</strong>
+            <small>Guest Mode</small>
           </div>
         </div>
-      </div>
+      </header>
 
-      <div class="hero-visual reveal" aria-label="Orbit app preview">
-        <div class="orbit-shell">
-          <div class="orbit-ring ring-one" aria-hidden="true"></div>
-          <div class="orbit-ring ring-two" aria-hidden="true"></div>
+      <div class="layout">
+        <aside class="left-panel">
+          <section class="mini-section">
+            <div class="section-title">
+              <span>🔥 Featured</span>
+              <small>Today</small>
+            </div>
 
-          <div class="mock-app">
-            <div class="mock-topbar">
+            <div class="mini-card large">
               <div>
-                <span class="tiny-label">Tonight</span>
-                <strong>Study Orbit</strong>
+                <span class="tag">New Game</span>
+                <h4>Poster Game</h4>
               </div>
-              <span class="status-pill">Ready</span>
+              <button>▶</button>
             </div>
 
-            <div class="focus-card">
+            <div class="mini-card color-one">
               <div>
-                <span class="tiny-label">First move</span>
-                <h2>Math worksheet</h2>
+                <span class="tag">Popular</span>
+                <h4>Poster Game</h4>
               </div>
-              <span class="time-chip">25m</span>
+              <button>▶</button>
             </div>
 
-            <div class="mini-timeline" aria-hidden="true">
-              <span style="--w: 38%"></span>
-              <span style="--w: 62%"></span>
-              <span style="--w: 46%"></span>
+            <div class="mini-card color-two">
+              <div>
+                <span class="tag">Arcade</span>
+                <h4>Poster Game</h4>
+              </div>
+              <button>▶</button>
+            </div>
+          </section>
+
+          <section class="continue-box">
+            <h3>Continue Playing</h3>
+
+            <div class="continue-item">
+              <div class="thumb"></div>
+              <span>Saved Game</span>
+              <button>▶</button>
             </div>
 
-            <div class="mini-cards">
-              <article>
-                <span>01</span>
-                <p>Sort tasks</p>
+            <div class="continue-item">
+              <div class="thumb blue"></div>
+              <span>Saved Game</span>
+              <button>▶</button>
+            </div>
+
+            <div class="continue-item">
+              <div class="thumb purple"></div>
+              <span>Saved Game</span>
+              <button>▶</button>
+            </div>
+
+            <div class="continue-item">
+              <div class="thumb orange"></div>
+              <span>Saved Game</span>
+              <button>▶</button>
+            </div>
+          </section>
+        </aside>
+
+        <section class="main-content">
+          <section class="hero-card">
+            <div class="hero-bg"></div>
+
+            <div class="hero-content">
+              <span class="pill">⭐ Main Game</span>
+              <div class="genre-row">
+                <span>Adventure</span>
+                <span>Action</span>
+                <span>Multiplayer</span>
+              </div>
+
+              <h1>Your Game Title</h1>
+              <p>
+                Add your own game description here. This area is ready for the main game you want to feature.
+              </p>
+
+              <div class="hero-actions">
+                <button class="primary-btn">▶ Play</button>
+                <button class="outline-btn">＋ Add</button>
+                <button class="circle-btn">•••</button>
+              </div>
+            </div>
+
+            <div class="slider-controls">
+              <button>‹</button>
+              <button>›</button>
+            </div>
+          </section>
+
+          <section class="recommendations">
+            <div class="section-heading">
+              <h2>You might like</h2>
+              <button>See all</button>
+            </div>
+
+            <div class="game-grid">
+              <article class="game-card">
+                <div class="poster poster-one"></div>
+                <span>Strategy</span>
+                <h3>Poster Game</h3>
+                <p>Add your game info here.</p>
+                <button>▶</button>
               </article>
-              <article>
-                <span>02</span>
-                <p>Place breaks</p>
+
+              <article class="game-card">
+                <div class="poster poster-two"></div>
+                <span>Adventure</span>
+                <h3>Poster Game</h3>
+                <p>Add your game info here.</p>
+                <button>▶</button>
               </article>
-              <article>
-                <span>03</span>
-                <p>Start focused</p>
+
+              <article class="game-card">
+                <div class="poster poster-three"></div>
+                <span>Arcade</span>
+                <h3>Poster Game</h3>
+                <p>Add your game info here.</p>
+                <button>▶</button>
+              </article>
+
+              <article class="game-card">
+                <div class="poster poster-four"></div>
+                <span>Racing</span>
+                <h3>Poster Game</h3>
+                <p>Add your game info here.</p>
+                <button>▶</button>
               </article>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="planner" class="planner-section section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Try the planner</p>
-        <h2>Drop in everything on your mind.</h2>
-        <p>
-          Add one task per line. Orbit will estimate a practical study plan using your available time and energy level.
-        </p>
-      </div>
-
-      <div class="planner-grid">
-        <form class="planner-card input-card reveal" data-planner-form>
-          <div class="card-header">
-            <div>
-              <p class="eyebrow">Brain dump</p>
-              <h3>Homework, notes, tasks</h3>
-            </div>
-            <span class="save-state" data-save-state>Auto-saved locally</span>
-          </div>
-
-          <label class="sr-only" for="taskDump">Enter homework, notes, and tasks</label>
-          <textarea
-            id="taskDump"
-            name="taskDump"
-            data-task-dump
-            rows="10"
-            placeholder="Example:
-Math worksheet due tomorrow
-Read chapter 8 for history
-Study biology quiz notes
-English essay outline 45 min
-Pack gym clothes"
-          ></textarea>
-
-          <div class="controls-grid">
-            <label class="field">
-              <span>Energy tonight</span>
-              <select data-energy>
-                <option value="low">Low — keep it gentle</option>
-                <option value="medium" selected>Medium — balanced pace</option>
-                <option value="high">High — deeper focus</option>
-              </select>
-            </label>
-
-            <label class="field">
-              <span>Start time</span>
-              <input type="time" value="18:30" data-start-time />
-            </label>
-
-            <label class="field range-field">
-              <span>
-                Available time
-                <strong data-time-label>120 min</strong>
-              </span>
-              <input type="range" min="45" max="240" step="15" value="120" data-available-time />
-            </label>
-          </div>
-
-          <div class="planner-actions">
-            <button class="button button-primary" type="submit">Generate tonight’s plan</button>
-            <button class="button button-ghost" type="button" data-sample-button>Use sample</button>
-            <button class="button button-ghost danger" type="button" data-clear-button>Clear</button>
-          </div>
-
-          <p class="privacy-note">
-            This demo runs fully in your browser. It does not send your homework anywhere.
-          </p>
-        </form>
-
-        <section class="planner-card result-card reveal" aria-live="polite" aria-label="Generated study plan">
-          <div class="card-header">
-            <div>
-              <p class="eyebrow">Tonight’s orbit</p>
-              <h3>Your plan</h3>
-            </div>
-            <button class="copy-button" type="button" data-copy-plan disabled>Copy plan</button>
-          </div>
-
-          <div class="plan-stats" data-plan-stats>
-            <div>
-              <span>Tasks</span>
-              <strong>0</strong>
-            </div>
-            <div>
-              <span>Focus</span>
-              <strong>0m</strong>
-            </div>
-            <div>
-              <span>Finish</span>
-              <strong>—</strong>
-            </div>
-          </div>
-
-          <div class="empty-state" data-empty-state>
-            <div class="empty-orbit" aria-hidden="true"></div>
-            <h4>No plan yet</h4>
-            <p>Paste your homework list, choose your energy, then generate a clear path for the night.</p>
-          </div>
-
-          <div class="timeline" data-timeline hidden></div>
+          </section>
         </section>
       </div>
     </section>
-
-    <section id="how" class="how-section section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">How it works</p>
-        <h2>A simple reset after school.</h2>
-      </div>
-
-      <div class="steps-grid">
-        <article class="step-card reveal">
-          <span>01</span>
-          <h3>Dump everything</h3>
-          <p>No perfect formatting. Write the homework, reminders, notes, and due-soon stuff taking up space in your head.</p>
-        </article>
-
-        <article class="step-card reveal">
-          <span>02</span>
-          <h3>Orbit sorts the night</h3>
-          <p>The planner estimates time, prioritizes urgent study work, and fits tasks into the time you actually have.</p>
-        </article>
-
-        <article class="step-card reveal">
-          <span>03</span>
-          <h3>Start with one move</h3>
-          <p>You get a first task, a rhythm of breaks, and a clear finish point so the night feels possible.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="features" class="features-section section">
-      <div class="feature-panel reveal">
-        <div>
-          <p class="eyebrow">Why students use it</p>
-          <h2>Built for the moment when school follows you home.</h2>
-        </div>
-
-        <div class="feature-list">
-          <article>
-            <span aria-hidden="true">✦</span>
-            <div>
-              <h3>Messy input friendly</h3>
-              <p>Orbit works with natural task lists instead of forcing you into a complicated system.</p>
-            </div>
-          </article>
-
-          <article>
-            <span aria-hidden="true">◐</span>
-            <div>
-              <h3>Energy-aware planning</h3>
-              <p>Low-energy nights get shorter focus blocks and more breathing room.</p>
-            </div>
-          </article>
-
-          <article>
-            <span aria-hidden="true">⌁</span>
-            <div>
-              <h3>Honest static demo</h3>
-              <p>This version is frontend-only and ready for GitHub Pages. Real accounts or AI sync would need a backend.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta section reveal">
-      <p class="eyebrow">Ready when the backpack hits the floor</p>
-      <h2>Give tonight a path before it becomes a spiral.</h2>
-      <a class="button button-primary" href="#planner">Plan tonight</a>
-    </section>
   </main>
-
-  <footer class="footer">
-    <p>© <span data-year></span> Orbit. A calm study-planning concept for students.</p>
-    <a href="#top">Back to top</a>
-  </footer>
-
-  <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
 
   <script src="script.js"></script>
 </body>
